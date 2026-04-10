@@ -106,4 +106,23 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll("section").forEach(sec => {
     sec.classList.add("fade-in");
     observer.observe(sec);
-});
+}); 
+
+// tvftfcvfcd
+function pilihEvent(namaEvent) {
+    // isi dropdown
+    document.getElementById("event").value = namaEvent;
+
+    // scroll ke form
+    document.getElementById("formDaftar").scrollIntoView({
+        behavior: "smooth"
+    });
+
+    // efek glow
+    const form = document.querySelector("form");
+    form.style.boxShadow = "0 0 20px cyan";
+
+    setTimeout(() => {
+        form.style.boxShadow = "";
+    }, 1500);
+}

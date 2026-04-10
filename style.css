@@ -205,4 +205,13 @@ input::placeholder {
 header, nav, footer {
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
+} 
+#kontak {
+    text-align: center;
+}
+
+#kontak button {
+    margin-top: 10px;
+    background: #25D366;
+    color: white;
 }
