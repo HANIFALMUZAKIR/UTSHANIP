@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Style Hanip</h1>
+</header>
+<!-- NAV -->
+<nav>
+    <a href="#tentang">Home</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#formDaftar">Daftar</a>
+</nav>
+<section id="tentang" class="tentang">
+    <div class="tentang-container">
+
+        <div class="tentang-text">
+            <h2>Tentang Style hanip</h2>
+            <p>
+                Style hanip adalah penyedia jasa event dengan konsep 
+                <b>“event organizer”</b> — yaitu gaya event yang santai, kreatif, dan penuh keseruan.
+            </p>
+            <p>
+                Kami percaya setiap acara bukan hanya sekadar event, tetapi pengalaman yang harus
+                berkesan, estetik, dan memorable. Mulai dari wedding, konser, hingga event santai,
+                semua kami desain dengan sentuhan modern dan unik.
+            </p>
+            <p>
+                Dengan tim profesional dan ide-ide segar, kami siap membuat acara kamu jadi
+                <b>lebih hidup, lebih seru, dan tidak membosankan.</b>
+            </p>
+        </div>
+
+        <div class="tentang-img">
+            <img src="download.jpeg" alt="Event Organizer">
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MAIN -->
+<main>
+
+    <!-- SECTION LAYANAN -->
+    <section id="layanan" class="layanan">
+    <h2>Layanan Kami</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="download.jpeg" alt="Wedding">
+            <h3>Wedding Organizer</h3>
+            <p>Kami membantu mewujudkan pernikahan impian Anda dengan konsep elegan dan berkesan.</p>
+            <button>Pesan Sekarang</button>
+        </div>
+
+        <div class="card">
+            <img src="seminar.jpeg" alt="Wedding">
+            <h3>Seminar & Workshop</h3>
+            <p>Menyediakan layanan profesional untuk acara edukasi, seminar, dan workshop.</p>
+            <button>Pesan Sekarang</button>
+        </div>
+
+        <div class="card">
+            <img src="konser.jpeg" alt="Wedding">
+            <h3>Concert & Music Event</h3>
+            <p>Mengelola event musik dan konser dengan sistem profesional dan modern.</p>
+            <button>Pesan Sekarang</button>
+        </div>
+
+        <div class="card">
+            <img src="hbd.jpeg" alt="Wedding">
+            <h3>Birthday Party</h3>
+            <p>Buat momen ulang tahun jadi lebih seru dan tak terlupakan bersama kami.</p>
+            <button>Pesan Sekarang</button>
+        </div>
+
+    </div>
+</section>
+
+    <!-- SECTION FORM -->
+    <section>
+        <h2>Pendaftaran Event</h2>
+
+        <form id="formDaftar">
+            <input type="text" id="nama" placeholder="Nama" required>
+            <small class="error" id="errNama"></small>
+
+            <input type="email" id="email" placeholder="Email" required>
+            <small class="error" id="errEmail"></small>
+
+            <input type="number" id="hp" placeholder="No HP" required>
+            <small class="error" id="errHp"></small>
+
+            <select id="event">
+                <option value="">Pilih Event</option>
+                <option>Wedding</option>
+                <option>Seminar</option>
+                <option>concert & music event </option>
+                <option>birthday party</option>
+            </select>
+            <small class="error" id="errEvent"></small>
+
+            <label>
+                <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+            </label>
+            <small class="error" id="errGender"></small>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </section>
+
+    <!-- SECTION TAMBAH ITEM -->
+    <section>
+        <h2>Tambah Layanan</h2>
+
+        <input type="text" id="newItem" placeholder="Nama layanan">
+<button onclick="tambahItem()">Tambah</button>
+
+<div class="card-container" id="cardContainer"></div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Event Organizer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
